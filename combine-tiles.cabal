@@ -1,0 +1,27 @@
+Name:         combine-tiles
+Version:      0.0.1
+License-File: COPYING
+Author:       Johan Kiviniemi
+Synopsis:     Combine Google Maps -compatible tiles into a single image using GraphicsMagick
+Homepage:     https://github.com/ion1/combine-tiles
+Category:     Graphics
+
+Cabal-Version: >= 1.6
+Build-Type:    Simple
+
+Executable combine-tiles
+  Build-Depends: base == 4.*,
+                 bytestring == 0.9.*,
+                 containers == 0.4.*,
+                 data-lens-fd == 2.0.*,
+                 data-lens-template == 2.1.*,
+                 directory == 1.1.*,
+                 filepath == 1.2.*,
+                 NumInstances == 1.*,
+                 xmlgen == 0.4.*
+  Main-Is:       CombineTiles.hs
+  GHC-Options:   -Werror -Wall
+
+Source-Repository head
+  Type:     git
+  Location: git://github.com/ion1/combine-tiles.git
